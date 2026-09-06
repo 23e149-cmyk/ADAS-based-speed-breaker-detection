@@ -1,0 +1,30 @@
+# ADAS Speed Breaker Detection System - Backend Dependencies
+#
+# Install with:
+#   pip install -r requirements.txt
+#
+# NOTE on PyTorch / CUDA:
+#   The default "torch" wheel from PyPI is CPU-only. If you have an NVIDIA
+#   GPU and want CUDA acceleration, install PyTorch separately FIRST using
+#   the command generated at https://pytorch.org/get-started/locally/
+#   (pick your CUDA version), THEN run `pip install -r requirements.txt`.
+#   Example (CUDA 12.1):
+#     pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+websockets==13.1
+python-multipart==0.0.9
+
+# Computer vision / AI
+ultralytics==8.3.28
+opencv-python==4.10.0.84
+numpy==1.26.4
+Pillow==10.4.0
+
+# Utilities
+pydantic==2.9.2
+python-dotenv==1.0.1
+
+# Testing
+pytest==8.3.3
